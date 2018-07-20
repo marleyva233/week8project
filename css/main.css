@@ -1,4 +1,37 @@
+/*
+[0]GENERAL
+[1]INPUT SECTION
+[2]OUTPUT SECTION
+[3]MEDIA QUERIES
+*/
+
+/*[0]GENERAL*/
+
+
+/*[1]INPUT SECTION*/
 input, textarea{
 	width: 100%;
 	padding-left: 1%;
 }
+textarea{
+	height: 150px;
+}
+
+/*[2]OUTPUT SECTION*/
+.username{
+	font-weight: bold;
+	font-size: 18px;
+}
+.smalldate{
+font-size:10px;
+font-weight: normal;
+}
+.comment{
+font-size:14px;
+}
+.deletebutton{
+	border: none;
+	font-size: 10px;
+}
+
+/*[3]MEDIA QUERIES*/

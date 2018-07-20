@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<!-- meta tag -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
+		<title>Comments</title>
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 		<!-- bootstrap CDN -->
@@ -15,14 +15,14 @@
 	<body class="bg-dark">
 
 		<!-- HERE STARTS THE MAIN CONTENT -->
-		<section class="bg-dark">
-			<div class="container bg-info p-5">
+		<section class="bg-dark pt-5">
+			<div class="container-fluid bg-info p-5">
 				<div class="row">
-					<div class="col-6 mx-auto text-center">
+					<div class="col-8 mx-auto text-center">
 						<h1>Leave a comment</h1>
-						<input id="userName" type="text" name="username" placeholder="username">
-						<textarea id="myComment" placeholder="comment"></textarea>
-						<button onclick="submitMyComment()">comment</button>
+							<input id="userName" type="text" name="username" placeholder="username">
+							<textarea id="myComment" placeholder="comment"></textarea>
+							<button class="btn btn-light" onclick="submitMyComment()">comment</button>
 					</div>
 				</div>
 			</div>
@@ -32,19 +32,19 @@
 		<!-- ANYTHING HAVING TO DO WITH THE OUTPUT GOES HERE -->
 		<section>
 			<div class="container-fluid p-5">
-				<div class="row">
-					<div class="col-6 mx-auto">
-						<span>
+				<div class="row" id="divParent">
+					
+						
 							<!-- here goes the username -->
-						</span>
-						<p>
+						
+						
 							<!-- here goes whatever the comment is -->
-						</p>
-						<span>
+						
+						
 							<!-- here goes a time stamp of some sort -->
-						</span>
-					</div>
-				</div>
+						
+					
+				</div>	
 			</div>
 		</section>
 
