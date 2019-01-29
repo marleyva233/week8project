@@ -4,12 +4,8 @@ function submitMyComment() {
 	var myComment = document.getElementById("myComment");
 	var parentDiv = document.getElementById("divParent");
 	var date = new Date();
-	if (userName.value == "") {
-		alert("Please enter your username!");
-		return false;
-	}
-	if (myComment.value == "") {
-		alert("You cannot submit an empty comment :( !");
+	if (userName.value == "" || myComment.value == "") {
+		alert("Please enter your username and/or comment!");
 		return false;
 	}
 	var newComment = document.createElement("div");
