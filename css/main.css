@@ -7,18 +7,32 @@
 /*[0]GENERAL*/
 /*[1]INPUT SECTION*/
 body{
+	font-family: 'Abhaya Libre', serif;
 	font-size: 14px;
 }
-input, textarea{
-	width: 100%;
+input, 
+textarea{
 	padding-left: 1%;
 }
 textarea{
 	height: 150px;
 }
+h1, 
+h4{
+	font-family: 'Fredericka the Great', cursive;
+}
 /*[2]OUTPUT SECTION*/
 .smalldate{
-font-size:10px;
-font-weight: normal;
+	display: block; 
+	font-size:10px;
+	font-weight: normal;
+}
+.deleteBtn{
+	text-decoration: underline;
+	font-size: 10px;
+	cursor: pointer;
+	background-color: transparent;
+	display: block;
+	border:none;
 }
 /*[3]MEDIA QUERIES*/

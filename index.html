@@ -9,19 +9,21 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 		<!-- bootstrap CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!-- custom fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Fredericka+the+Great" rel="stylesheet">
 		<!-- my custom css -->
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<!-- STARTING MAIN CONTENT -->
-		<section class="pt-5">
-			<div class="container-fluid bg-info p-5">
+		<section>
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-8 mx-auto text-center">
+					<div class="col-12 mx-auto text-center">
 						<h1>Leave a comment</h1>
-							<input id="userName" type="text" name="username" placeholder="username">
-							<textarea id="myComment" placeholder="comment"></textarea>
-							<button class="btn btn-light" onclick="submitMyComment()">comment</button>
+							<input id="userName" type="text" name="username" placeholder="username" class="bg-light w-50">
+							<textarea id="myComment" placeholder="comment" class="bg-light w-50"></textarea>
+							<button class="btn btn-dark w-50" onclick="submitMyComment()">comment</button>
 					</div>
 				</div>
 			</div>
@@ -29,11 +31,9 @@
 		<!-- ENDING MAIN CONTENT -->
 		<!-- STARTING OUTPUT SECTION -->
 		<section>
-			<div class="container-fluid p-5">
+			<div class="container-fluid">
 				<div class="row" id="divParent">
-							<!-- username -->
 							<!-- comment -->
-							<!-- timestamp -->	
 				</div>	
 			</div>
 		</section>
