@@ -23,7 +23,7 @@ function deletingComment(num) {
 	var commentsArea = document.getElementById("divParent");
 	commentsArea.removeChild(document.getElementById("comment" + num));
 }
-myComment.addEventListener("keyup", function(event) {
+myComment.addEventListener("keyup", event => {
 	if (event.keyCode === 13) {
 		submitMyComment();
 	} else return false;
