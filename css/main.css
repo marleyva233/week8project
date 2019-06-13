@@ -6,28 +6,28 @@
 */
 /*[0]GENERAL*/
 /*[1]INPUT SECTION*/
-body{
+body {
 	font-family: 'Abhaya Libre', serif;
 	font-size: 14px;
 }
 input, 
-textarea{
+textarea {
 	padding-left: 1%;
 }
-textarea{
+textarea {
 	height: 150px;
 }
 h1, 
-h4{
+h6 {
 	font-family: 'Fredericka the Great', cursive;
 }
 /*[2]OUTPUT SECTION*/
-.smalldate{
+.smalldate {
 	display: block; 
 	font-size:10px;
 	font-weight: normal;
 }
-.deleteBtn{
+.deleteBtn {
 	text-decoration: underline;
 	font-size: 10px;
 	cursor: pointer;

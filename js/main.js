@@ -1,15 +1,11 @@
 var counter = 0;
 function submitMyComment() {
-	var userName = document.getElementById("userName");
+	var userName = document.getElementById("userName").value;
 	var myComment = document.getElementById("myComment");
 	var parentDiv = document.getElementById("divParent");
 	var date = new Date();
-	if (userName.value=="") {
-		alert("Please enter your username!");
-		return false;
-	}
-	if (myComment.value=="") {
-		alert("You cannot submit an empty comment :( !");
+	if (userName === "") {
+		alert("All fields must be filled to comment!");
 		return false;
 	}
 	var newDiv=document.createElement("div");
@@ -37,5 +33,5 @@ function submitMyComment() {
 }
 function deletingComment(num){
 	var commentsArea=document.getElementById("divParent");
-	commentsArea.removeChild(document.getElementById("comment"+num));
+	commentsArea.removeChild(document.getElementById("comment" + num));
 }
