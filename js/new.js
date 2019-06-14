@@ -1,10 +1,10 @@
 let counter = 0;
-let myComment = document.getElementById("myComment");
 function submitMyComment() {
 	let userName = document.getElementById("userName");
+	let myComment = document.getElementById("myComment");
 	const parentDiv = document.getElementById("divParent");
 	const date = new Date();
-	if (userName.value == "" || myComment.value == "") {
+	if (userName.value === "" || myComment.value === "") {
 		alert("Please enter your username and/or comment!");
 		return false;
 	}
@@ -23,8 +23,3 @@ function deletingComment(num) {
 	var commentsArea = document.getElementById("divParent");
 	commentsArea.removeChild(document.getElementById("comment" + num));
 }
-myComment.addEventListener("keyup", event => {
-	if (event.keyCode === 13) {
-		submitMyComment();
-	} else return false;
-});
